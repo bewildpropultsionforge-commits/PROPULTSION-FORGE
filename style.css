@@ -1,0 +1,102 @@
+/* Fonts & Background */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1c0030, #5a00a0);
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(90,0,160,0.3);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+    margin: 1px;
+    padding: 2px;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    color: #ff6af4;
+}
+
+/* Logo */
+.site-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
+.hero h1 { font-size: 4rem; color: #ff6af4; }
+.hero p { font-size: 1.5rem; }
+
+/* About Section */
+.home-about { max-width: 900px; margin: 50px auto; text-align: center; line-height: 1.8; font-size: 1.1rem; }
+.home-about h2 { color: #ff6af4; font-size: 2rem; margin-bottom: 20px; }
+
+/* Chat Container */
+.chat-container, .image-gen-box {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.chat-msg { margin: 8px 0; padding: 10px; border-radius: 12px; }
+.user-msg { background: #5a00a0; text-align: right; }
+.bot-msg { background: #ff6af4; color: #000; text-align: left; }
+
+/* Input & Button */
+.chat-input-container, .image-gen-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chat-input-container input, .image-gen-box input {
+    flex: 1; min-width: 200px; padding: 12px 15px; border-radius: 12px; border: none; outline: none; font-size: 1rem; background: rgba(255,255,255,0.05); color: #fff;
+}
+
+.chat-input-container button, .image-gen-box button {
+    padding: 12px 25px; border: none; border-radius: 12px; background: #ff6af4; color: #000; font-weight: bold; cursor: pointer;
+}
+
+.image-box { max-width: 500px; margin: 20px auto; padding: 15px; border-radius: 15px; background: rgba(0,0,0,0.4); }
+.image-box img { width: 100%; border-radius: 12px; }
